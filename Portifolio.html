@@ -12,13 +12,13 @@
 					<a href="Portifolio.html">Kaian Araújo Sousa</a>
 				</div>
 				<div id="navigation">
-					<input id="Proj" type="radio" name="choice">
-           			<input id="Smim" type="radio" name="choice" checked>
-           			<input id="Gale" type="radio" name="choice">
+					<input id="Proj" type="radio" name="choice" check="false">
+           			<input id="Smim" type="radio" name="choice" check="checked">
+           			<input id="Gale" type="radio" name="choice" check="false">
            			<div class="nav">
-           			  <label class="btn" for="Proj">Projetos</label>
-           			  <label class="btn" for="Smim">Sobre Mim</label>
-           			  <label class="btn" for="Gale">Galeria</label>
+           			  <div class="btn" for="Proj" onclick="inptrue1('Pbut')">Projetos</div>
+           			  <div class="btn" for="Smim" onclick="inptrue1('Sbut')">Sobre Mim</div>
+           			  <div class="btn" for="Gale" onclick="inptrue1('Gbut')">Galeria</div>
 					</div>
 				</div>
 			</div>
@@ -33,7 +33,7 @@
 				<div class="c">
 					<div class="text-justify grayblock3">
 						<div class="me">
-							<img class="me" src="css/me.jpg">
+							<img class="me" src="css/me.JPG">
 						</div>
 						<p>Eu me chamo <b>Kaian Araújo Sousa</b>.
 						<br/><br/>Nasci no Maranhão na cidade capital de São Luís.
@@ -53,27 +53,27 @@
 					<div class="c">
 						<div class="text-justify">
 
-							<input type="radio"  ID="GL1" class="box" name="gal" checked>
-							<input type="radio"  ID="GL2" class="box" name="gal">
-							<input type="radio"  ID="GL3" class="box" name="gal">
-							<input type="radio"  ID="GL4" class="box" name="gal">
-							<input type="radio"  ID="GL5" class="box" name="gal">
+							<input type="radio" ID="GL1" class="box" name="gal" check="checked" >
+							<input type="radio" ID="GL2" class="box" name="gal" check="false" >
+							<input type="radio" ID="GL3" class="box" name="gal" check="false" >
+							<input type="radio" ID="GL4" class="box" name="gal" check="false">
+							<input type="radio" ID="GL5" class="box" name="gal" check="false">
 
 							<div class="boxbox grayblock">
 								<div class="inbox">
-								<label class="btn box" for="GL1">
+								<div onclick="inpt2(1)" class="btn box" id="BGL1">
 									<img id="iGL1" class="box" src="css/GL1.png" >
-								</label>
-								<label class="btn box" for="GL2">
+								</div>
+								<div onclick="inpt2(2)" class="btn box" id="BGL2">
 									<img id="iGL2" class="box" src="css/GL2.png">
-								</label>
-								<label class="btn box" for="GL3">
+								</div>
+								<div onclick="inpt2(3)" class="btn box" id="BGL3">
 									<img id="iGL3" class="box" src="css/GL3_1.png">
-								</label>
-								<label class="btn box" for="GL4">
+								</div>
+								<div onclick="inpt2(4)" class="btn box" id="BGL4">
 									<img id="iGL4" class="box" src="css/GL4.png">
-								</label>
-								<div class=extrablock>hidden</div>
+								</div>
+								<div onclick="inpt2(5)" class=extrablock>hidden</div>
 								</div>
 							</div>
 						</div>
@@ -135,17 +135,17 @@
 					<div class="c">
 						<div class="text-justify">
 
-							<input type="radio"  ID="PJ1" class="box" name="pro" checked>
-							<input type="radio"  ID="PJ2" class="box" name="pro">
-							<input type="radio"  ID="PJ3" class="box" name="pro">
-							<input type="radio"  ID="PJ4" class="box" name="pro">
-							<input type="radio"  ID="PJ5" class="box" name="pro">
+							<input type="radio"  ID="PJ1" class="box" name="pro" check="checked" >
+							<input type="radio"  ID="PJ2" class="box" name="pro" check="false">
+							<input type="radio"  ID="PJ3" class="box" name="pro" check="false" >
+							<input type="radio"  ID="PJ4" class="box" name="pro" check="false" >
+							<input type="radio"  ID="PJ5" class="box" name="pro" check="false" >
 
 							<div class="boxbox grayblock">
 								<div class="inbox">
-								<label class="btn box" for="PJ1">
+								<div onclick="inpt3(1)" class="btn box" id="BPJ1">
 									<img id="iPJ1" class="box" src="css/PJ1.png" >
-								</label>
+								</div>
 								<div class=extrablock>hidden</div>
 								</div>
 							</div>
@@ -222,6 +222,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="css/jquery-3.3.1.js">	</script>
 	<script src="css/code.js">	</script>
 	</body>
 </html>

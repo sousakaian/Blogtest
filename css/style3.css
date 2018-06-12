@@ -291,12 +291,12 @@ p.box{
 	display: none;
 }
 
-label.box{
+.btn.box{
 	display: table;
 	border: solid 10px #fa5;
 	background-color: #fff;
 	padding: 0px;
-    min-width: 100px;
+    min-width: 50px;
 	margin-right: 10px;
 	transition: width 1s ease;
 	margin-left: auto;
@@ -304,15 +304,16 @@ label.box{
 	transition: color .5s ease, background-color .5s ease, border-color .5s ease, border-radius .5s ease;
 }
 
-label.box:hover{
+.btn.box:hover{
 	border: solid 10px black;
+	border-radius: 0px;
 	overflow-y: hidden;
 }
 
 img.box{
 	float:left;
 	width: 100%;
-  height: 100px;
+  	min-height: 50px;
 	transition: width 1s ease;
 	margin:0%;
 	border-radius: 20px;
@@ -481,117 +482,117 @@ div.showbox button:hover,footer input[type=submit]:hover,footer input[type=reset
 }
 
 
-#Proj:checked~.nav [for=Proj] {
+#Proj[check=checked].nav [for=Proj] {
     color: #fff;
     background-color: #000;
 }
-#Proj:checked~.container[data-schedule=Proj] {
+#Proj[check=checked].container[data-schedule=Proj] {
     display: block;
 }
-#Smim:checked~.nav [for=Smim] {
+#Smim[check=checked].nav [for=Smim] {
     color: #fff;
     background-color: #000;
 }
-#Smim:checked~.container[data-schedule=Smim]{
+#Smim[check=checked].container[data-schedule=Smim]{
     display: block;
 }
-#Gale:checked~.nav [for=Gale] {
+#Gale[check=checked].nav [for=Gale] {
     color: #fff;
     background-color: #000;
 } 
-#Gale:checked~.container[data-schedule=Gale] {
+#Gale[check=checked].container[data-schedule=Gale] {
     display: block;
 }
 
-#GL1:checked~.boxbox [for=GL1] {
+#GL1[check=checked].boxbox [for=GL1] {
     color: #fff;
     background-color: #000;
 	  border-radius: 0px;
 	  border: solid 10px black;
 }
-#GL1:checked~.showbox[data-schedule=GL1] {
+#GL1[check=checked].showbox[data-schedule=GL1] {
     display: inline-block;
 }
-#GL2:checked~.boxbox [for=GL2] {
+#GL2[check=checked].boxbox [for=GL2] {
     color: #fff;
     background-color: #000;
 	  border-radius: 0px;
 	  border: solid 10px black;
 }
-#GL2:checked~.showbox[data-schedule=GL2] {
+#GL2[check=checked].showbox[data-schedule=GL2] {
     display: inline-block;
 }
-#GL3:checked~.boxbox [for=GL3] {
+#GL3[check=checked].boxbox [for=GL3] {
     color: #fff;
     background-color: #000;
 	  border-radius: 0px;
 	  border: solid 10px black;
 }
-#GL3:checked~.showbox[data-schedule=GL3] {
+#GL3[check=checked].showbox[data-schedule=GL3] {
     display: inline-block;
 }
-#GL4:checked~.boxbox [for=GL4] {
+#GL4[check=checked].boxbox [for=GL4] {
     color: #fff;
     background-color: #000;
 	  border-radius: 0px;
 	  border: solid 10px black;
 }
-#GL4:checked~.showbox[data-schedule=GL4] {
+#GL4[check=checked].showbox[data-schedule=GL4] {
     display: inline-block;
 }
-#GL5:checked~.boxbox [for=GL5] {
+#GL5[check=checked].boxbox [for=GL5] {
     color: #fff;
     background-color: #000;
 	  border-radius: 0px;
 	  border: solid 10px black;
 }
-#GL5:checked~.boxbox [data-schedule=GL5] {
+#GL5[check=checked].boxbox [data-schedule=GL5] {
     display: inline-block;
 }
 
 
-#PJ1:checked~.boxbox [for=PJ1] {
+#PJ1[check=checked].boxbox [for=PJ1] {
     color: #fff;
     background-color: #000;
 	  border-radius: 0px;
 	  border: solid 10px black;
 }
-#PJ1:checked~.showbox[data-schedule=PJ1] {
+#PJ1[check=checked].showbox[data-schedule=PJ1] {
     display: inline-block;
 }
-#PJ2:checked~.boxbox [for=PJ2] {
+#PJ2[check=checked].boxbox [for=PJ2] {
     color: #fff;
     background-color: #000;
 	  border-radius: 0px;
 	  border: solid 10px black;
 }
-#PJ2:checked~.showbox[data-schedule=PJ2] {
+#PJ2[check=checked].showbox[data-schedule=PJ2] {
     display: inline-block;
 }
-#PJ3:checked~.boxbox [for=PJ3] {
+#PJ3[check=checked].boxbox [for=PJ3] {
     color: #fff;
     background-color: #000;
 	  border-radius: 0px;
 	  border: solid 10px black;
 }
-#PJ3:checked~.showbox[data-schedule=PJ3] {
+#PJ3[check=checked].showbox[data-schedule=PJ3] {
     display: inline-block;
 }
-#PJ4:checked~.boxbox [for=PJ4] {
+#PJ4[check=checked].boxbox [for=PJ4] {
     color: #fff;
     background-color: #000;
 	  border-radius: 0px;
 	  border: solid 10px black;
 }
-#PJ4:checked~.showbox[data-schedule=PJ4] {
+#PJ4[check=checked].showbox[data-schedule=PJ4] {
     display: inline-block;
 }
-#PJ5:checked~.boxbox [for=PJ5] {
+#PJ5[check=checked].boxbox [for=PJ5] {
     color: #fff;
     background-color: #000;
 	  border-radius: 0px;
 	  border: solid 10px black;
 }
-#PJ5:checked~.boxbox [data-schedule=PJ5] {
+#PJ5[check=checked]~.boxbox [data-schedule=PJ5] {
     display: inline-block;
 }
