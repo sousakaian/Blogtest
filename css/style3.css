@@ -349,7 +349,7 @@ img.showbox{
 	float: left;
 }
 
-div.showbox button, footer input[type=submit], footer input[type=reset] {
+div.showbox button, footer input[type=submit], footer input[type=reset], footer input[type=button]{
     float: right;
     margin-left: 5px;
     background-color: #fff;
@@ -362,7 +362,7 @@ div.showbox button, footer input[type=submit], footer input[type=reset] {
     transition: color 0.5s ease, border 0.5s ease, background-color 0.5s ease;
 }
 
-div.showbox button:hover,footer input[type=submit]:hover,footer input[type=reset]:hover{
+div.showbox button:hover,footer input[type=submit]:hover,footer input[type=reset]:hover, footer input[type=button]:hover{
     color: #000;
     background-color: #FA5;
     border: solid 6px #fff;
@@ -393,24 +393,26 @@ div.showbox button:hover,footer input[type=submit]:hover,footer input[type=reset
 }
 
 @media (max-width: 1160px) {
-   .grayblock {
-	padding-left: 30px;
+
+	.grayblock {
+	    padding-left: 30px;
     	padding-right: 20px;
     	margin-left: 0px;
     	margin-right: 0px;
      	width: 25%;
     	text-align: center;
 	}
-  .inbox{
-	text-align: center;
+	.inbox{
+	  	text-align: center;
      	width: auto;
 	}
-  .grayblock3{
-	padding-right: 10px;
-	padding-left: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
+	.grayblock3{
+	  	padding-right: 10px;
+	  	padding-left: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
+
   .nomelogo{
   	float:none;
   	padding:0px;
@@ -454,22 +456,23 @@ div.showbox button:hover,footer input[type=submit]:hover,footer input[type=reset
 
 @media (max-width: 750px) {
   img.showbox{
-	width: 80%;
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
-  }
-  img.box{
+	  width: 80%;
+	  float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	img.box{
   	max-height: 50px;
-  }
-  .grayblock {
-	padding-left: 20px;
+	}
+	.grayblock {
+	    padding-left: 20px;
     	padding-right: 30px;
+
      	width: auto;
-  }
-  .inbox{
+	}
+	.inbox{
      	width: 65px;
-  }
+	}
 }
 
 @media (max-width: 430px) {
@@ -482,26 +485,28 @@ div.showbox button:hover,footer input[type=submit]:hover,footer input[type=reset
   .th{
   	width: 100%;
   }
+	footer div.leftdiv{
+		width: 80%;
+		float: none;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
   footer div.leftdiv{
-	width: 80%;
-	float: none;
-	margin-left: 10%;
-	margin-right: 10%;
+		width: 80%;
+		float: none;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	footer form input[type=text]{
+	  width: 100%;
   }
-  footer div.leftdiv{
-	width: 80%;
-	float: none;
-	margin-left: 10%;
-	margin-right: 10%;
-  }
-  footer form input[type=text]{
-	width: 100%;
-  }
+  
   footer form textarea{
-	width: 100%;
-	height: 10em;
+	  width: 100%;
+	  height: 10em;
   }
-  #rightpush{
+	
+	#rightpush{
 	margin-right: 0%;
   }
 }
