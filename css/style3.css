@@ -214,21 +214,23 @@ blockquote{
 	margin-top: 40px;
 }
 
-.grayblock{
-  	padding-top: 20px;
-  	padding-bottom: 20px;
-  	padding-left: 10%;
-  	margin-left: 20px;
-  	margin-right: 20px;
-	background-color: #777;
-	border: solid 5px black	;
-	border-radius: 100px;
+.grayblock {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+    width: 30%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #777;
+    border: solid 5px black;
+    margin-bottom: 40px;
+    border-radius: 100px;
 }
-
 .inbox{
-  	overflow-x:scroll;
-  	display: flex;
-  	width: 90%
+  	display: inline-block;
+  	width: 100%;
 }
 
 .extrablock{
@@ -240,13 +242,10 @@ blockquote{
 	margin-left: auto;
 }
 
-.grayblock2{
-  	padding-top: 20px;
-  	padding-bottom: 20px;
-  	padding-right: 5%;
-  	padding-left: 5%;
-	background-color: #000;
-	margin-top: 20px;
+.grayblock2 {
+    float: right;
+    width: 60%;
+    margin-bottom: 40px;
 }
 
 .grayblock3{
@@ -254,8 +253,8 @@ blockquote{
   	padding-bottom: 20px;
   	padding-right: 10%;
   	padding-left: 10%;
-	  margin-left: 20px;
-	  margin-right: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
   	margin-bottom: 40px;
 }
 
@@ -292,17 +291,17 @@ p.box{
 	display: none;
 }
 
-.btn.box{
-	display: table;
-	border: solid 10px #fa5;
-	background-color: #fff;
-	padding: 0px;
-    min-width: 50px;
-	margin-right: 10px;
-	transition: width 1s ease;
-	margin-left: auto;
-	border-radius: 30px;
-	transition: color .5s ease, background-color .5s ease, border-color .5s ease, border-radius .5s ease;
+.btn.box {
+    display: table;
+    border: solid 10px #fa5;
+    background-color: #fff;
+    padding: 0px;
+    float: left;
+    width: auto;
+    margin-right: 10px;
+    margin-left: auto;
+    border-radius: 30px;
+    transition: color .5s ease, background-color .5s ease, border-color .5s ease, border-radius .5s ease, width 1s ease;
 }
 
 .btn.box:hover{
@@ -313,8 +312,7 @@ p.box{
 
 img.box{
 	float:left;
-	width: 100%;
-  	min-height: 50px;
+  	max-height: 100px;
 	transition: width 1s ease;
 	margin:0%;
 	border-radius: 20px;
@@ -394,7 +392,26 @@ div.showbox button:hover,footer input[type=submit]:hover,footer input[type=reset
 .container, .cont {
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1160px) {
+
+	.grayblock {
+	    padding-left: 30px;
+    	padding-right: 20px;
+    	margin-left: 0px;
+    	margin-right: 0px;
+     	width: 25%;
+    	text-align: center;
+	}
+	.inbox{
+	  	text-align: center;
+     	width: auto;
+	}
+	.grayblock3{
+	  	padding-right: 10px;
+	  	padding-left: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 
   .nomelogo{
   	float:none;
@@ -443,6 +460,18 @@ div.showbox button:hover,footer input[type=submit]:hover,footer input[type=reset
 	  float: none;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	img.box{
+  	max-height: 50px;
+	}
+	.grayblock {
+	    padding-left: 20px;
+    	padding-right: 30px;
+
+     	width: auto;
+	}
+	.inbox{
+     	width: 65px;
 	}
 }
 
