@@ -64,29 +64,29 @@ function myFunction(){
     let Gale = $("#Gale"); 
     console.log(SM.css("display"))
     if (Smim.attr('check') == "checked") {
-        SM.css("display", "block");
+        SM.show(1000);
         SM.css("opacity", "1");
         SM.css("height","auto");
     } else {
-        SM.css("display","none");
+        SM.hide(1000);
         SM.css("opacity","0");
         SM.css("height","0px");
     }
     if (Proj.attr('check') == "checked") {
-        PJ.css("display","block");
+        PJ.show(1000);
         PJ.css("opacity","1");
         PJ.css("height","auto");
     } else {
-        PJ.css("display","none");
+        PJ.hide(1000);
         PJ.css("opacity","0");
         PJ.css("height","0px");
     }
     if (Gale.attr('check') == "checked") {
-        GL.css("display","block");
+        GL.show(1000);
         GL.css("opacity","1");
         GL.css("height","auto");
     } else {
-        GL.css("display","none");
+        GL.hide(1000);
         GL.css("opacity","0");
         GL.css("height","0px");
     }
@@ -101,12 +101,12 @@ function myFunction(){
         GL_a[i] = $("#GL_" + i);
         BGLa[i] = $("#BGL" + i);
         if(GLa[i].attr('check') == "checked"){
-            GL_a[i].css("display","inline-block");
+            GL_a[i].show(1000);
             GL_a[i].css("opacity","1");
             GL_a[i].css("height","auto");
             BGLa[i].css("border","solid 10px black");
         } else {
-            GL_a[i].css("display","none");
+            GL_a[i].hide(1000);
             GL_a[i].css("opacity","0");
             GL_a[i].css("height","0px");
             BGLa[i].css("border","solid 10px #fa5");
@@ -120,13 +120,13 @@ function myFunction(){
         Pj_a[o] = $("#PJ_" + o);
         BPja[o] = $("#BPjaPJ" + o);
         if(Pja[o].attr('check') == "checked"){
-            Pj_a[o].css("display","inline-block");
+            Pj_a[o].show(1000);
             Pj_a[o].css("opacity","1");
             Pj_a[o].css("height","auto");
             BPja[o].css("border","solid 10px black");
 
         } else {
-            Pj_a[o].css("display","none");
+            Pj_a[o].hide(1000);
             Pj_a[o].css("opacity","0");
             Pj_a[o].css("height","0px");
             BPja[o].css("border","solid 10px #fa5");
