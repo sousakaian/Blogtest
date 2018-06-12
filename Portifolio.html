@@ -1,0 +1,227 @@
+<!DOCTYPE html>	
+	<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style3.css">
+	</head>
+	<body onload="myFunction()" onclick="myFunction()">
+
+	<header>
+		<div>
+			<div class="Logo leftdiv">
+				<div class="nomelogo">
+					<a href="Portifolio.html">Kaian Araújo Sousa</a>
+				</div>
+				<div id="navigation">
+					<input id="Proj" type="radio" name="choice">
+           			<input id="Smim" type="radio" name="choice" checked>
+           			<input id="Gale" type="radio" name="choice">
+           			<div class="nav">
+           			  <label class="btn" for="Proj">Projetos</label>
+           			  <label class="btn" for="Smim">Sobre Mim</label>
+           			  <label class="btn" for="Gale">Galeria</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="corpo">
+		<div id="SM" class="container" data-schedule="Smim">
+			<div id="Sobre mim">
+				<h2 class="text-center">Sobre Mim</h2>
+			</div>
+			<div class="rowabout">
+				<div class="c">
+					<div class="text-justify grayblock3">
+						<div class="me">
+							<img class="me" src="css/me.jpg">
+						</div>
+						<p>Eu me chamo <b>Kaian Araújo Sousa</b>.
+						<br/><br/>Nasci no Maranhão na cidade capital de São Luís.
+						<br/><br/>Meus maiores interesses são na criação de conteúdo, mais especificamente na Criação de <b><i>Narrativas</i></b>, <i><b>Personagens</b></i>, <i><b>Criaturas</b></i> e <i><b>Mecânicas para Jogos</b></i> como principais focos.
+						<br/><br/>Participei de um grupo de teatro por boa parte do meu tempo de escola, quando eu estudava em Carajás Para. A partir disso adquiri boa iniciação em roteiro e narrativa, e tenho conhecimento em criação e analize de personagens.
+						<br/><br/>Desenho desde pequeno, apesar de nunca ter feito nenhum curso especifíco de desenho, essa sempre se mostrou como uma habilidade de destaque.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div id="GL" class="container" data-schedule="Gale">
+				<div id="galeria">
+					<h2 class="text-center">Galeria</h2>
+				</div>
+				<div class="rowabout">
+					<div class="c">
+						<div class="text-justify">
+
+							<input type="radio"  ID="GL1" class="box" name="gal" checked>
+							<input type="radio"  ID="GL2" class="box" name="gal">
+							<input type="radio"  ID="GL3" class="box" name="gal">
+							<input type="radio"  ID="GL4" class="box" name="gal">
+							<input type="radio"  ID="GL5" class="box" name="gal">
+
+							<div class="boxbox grayblock">
+								<div class="inbox">
+								<label class="btn box" for="GL1">
+									<img id="iGL1" class="box" src="css/GL1.png" >
+								</label>
+								<label class="btn box" for="GL2">
+									<img id="iGL2" class="box" src="css/GL2.png">
+								</label>
+								<label class="btn box" for="GL3">
+									<img id="iGL3" class="box" src="css/GL3_1.png">
+								</label>
+								<label class="btn box" for="GL4">
+									<img id="iGL4" class="box" src="css/GL4.png">
+								</label>
+								<div class=extrablock>hidden</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="text-center grayblock2">
+							<div class="showbox" id="GL_1" data-schedule="1">
+								<button type="button" onclick="glclose()"> X </button>
+								<div class="me">
+									<img class="showbox" src="css/GL1.png">
+								</div>
+								<h3 class="showbox"><b>Cameleão de Carvão/Cavalo de Brazas (Coalmeleon/Ember Horse) 1</b></h3>
+								<p class="showbox text-justify">Criatura estranha que mora perto de vulcões, ou até mesmo dentro deles.
+								Tendem a ter completo controle do calor a sua volta, podendo usa-lo para ilusões ou até mesmo flutuar.</p>
+							</div>
+
+							<div class="showbox" id="GL_2" data-schedule="2">
+								<button type="button" onclick="glclose()"> X </button>
+								<div class="me">
+									<img class="showbox" src="css/GL2.gif">
+								</div>
+								<h3 class="showbox"><b>Monarca Flamejante(Flame Mothnarch)</b></h3>
+								<p class="showbox text-justify">Uma Mariposa real, suas asas são como um manto que acolhem as chamas de suas asas, que queimam em muitas cores.</p>
+							</div>
+
+							<div class="showbox" id="GL_3" data-schedule="3">
+								<button type="button" onclick="glclose()"> X </button>
+								<div class="me">
+									<img class="showbox" src="css/GL3.png">
+								</div>
+								<h3 class="showbox"><b>Garota com Martelo</b></h3>
+								<p class="showbox text-justify">Pode parecer fofo ou irreal, mas voçê não tem ideia do poder destrutivo que ela tem.</p>
+							</div>
+
+							<div class="showbox" id="GL_4" data-schedule="4">
+								<button type="button" onclick="glclose()"> X </button>
+								<div class="me">
+									<img class="showbox" src="css/GL4.png">
+								</div>
+								<h3 class="showbox"><b>Carota de Cabelos Verdes (Processo) </b></h3>
+								<p class="showbox text-justify">Processo de pintura e sombreamento.</p>
+							</div>
+
+							<div class="showbox" id="GL_5" data-schedule="5">
+								<button type="button" onclick="glclose()"> X </button>
+								<div class="me">
+									<img class="showbox" src="css/GL1.png">
+								</div>
+								<h3 class="showbox"><b>Cameleão de Carvão/Cavalo de Brazas (Coalmeleon/Ember Horse) 5</b></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="PJ" class="container" data-schedule="Proj">
+				<div id="projetos">
+					<h2 class="text-center">Projetos</h2>
+				</div><div class="rowabout">
+					<div class="c">
+						<div class="text-justify">
+
+							<input type="radio"  ID="PJ1" class="box" name="pro" checked>
+							<input type="radio"  ID="PJ2" class="box" name="pro">
+							<input type="radio"  ID="PJ3" class="box" name="pro">
+							<input type="radio"  ID="PJ4" class="box" name="pro">
+							<input type="radio"  ID="PJ5" class="box" name="pro">
+
+							<div class="boxbox grayblock">
+								<div class="inbox">
+								<label class="btn box" for="PJ1">
+									<img id="iPJ1" class="box" src="css/PJ1.png" >
+								</label>
+								<div class=extrablock>hidden</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center grayblock2">
+							<div class="showbox" id="PJ_1" data-schedule="1">
+								<button type="button" onclick="pjclose()"> X </button>
+								<div class="me">
+									<img class="showbox" src="css/PJ1.png">
+								</div>
+								<h3 class="showbox"><b>A Saga(nome não oficial)</b></h3>
+								<p class="showbox text-justify">oito historias diferentes que se conectam inesperadamente.</p>
+							</div>
+
+							<div class="showbox" id="PJ_2" data-schedule="2">
+								<button type="button" onclick="pjclose()"> X </button>
+								<div class="me">
+									<img class="showbox" src="css/GL1.png">
+								</div>
+								<h3 class="showbox"><b>Cameleão de Carvão/Cavalo de Brazas (Coalmeleon/Ember Horse) 2</b></h3>
+							</div>
+
+							<div class="showbox" id="PJ_3" data-schedule="3">
+								<button type="button" onclick="pjclose()"> X </button>
+								<div class="me">
+									<img class="showbox" src="css/GL1.png">
+								</div>
+								<h3 class="showbox"><b>Cameleão de Carvão/Cavalo de Brazas (Coalmeleon/Ember Horse) 3</b></h3>
+							</div>
+
+							<div class="showbox" id="PJ_4" data-schedule="4">
+								<button type="button" onclick="pjclose()"> X </button>
+								<div class="me">
+									<img class="showbox" src="css/GL1.png">
+								</div>
+								<h3 class="showbox"><b>Cameleão de Carvão/Cavalo de Brazas (Coalmeleon/Ember Horse) 4</b></h3>
+							</div>
+
+							<div class="showbox" id="PJ_5" data-schedule="5">
+								<button type="button" onclick="pjclose()"> X </button>
+								<div class="me">
+									<img class="showbox" src="css/GL1.png">
+								</div>
+								<h3 class="showbox"><b>Cameleão de Carvão/Cavalo de Brazas (Coalmeleon/Ember Horse) 5</b></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+		<div class="leftdiv">
+		<blockquote>Uso de material de referencia vindo de <a href="http://freehtml5.co/" target="_blank">Freehtml5.co (Neos)</a> e <a href="http://mediaweek.virtual.ufc.br" target="_blank">Mediaweek.virtual.ufc.br</a></blockquote></div>
+		<div class="leftdiv">
+			<div id="CT" class="info">
+				<div class="tha"><p><b class="tha">Contatos:</b></p></tha>
+				<table class="table">
+					<tb class="th"><p><b class="med">E-mail: <br/></b> sousa.kaian@hotmail.com</b></p></tb>
+					<tb class="th"><p><b class="med">Celular: </b><br/>(85)986272007</p></tb>
+				</table>
+				<div>
+
+					<form id="mes" action="mailto:sousa.kaian@hotmail.com" method="POST" enctype="text/plain">
+						<b class="th">Name:</b><br/>
+							<input type="text" name="name" placeholder="Digite seu Nome"><br/>
+						<b class="th">Comment:</b><br/>
+							<textarea type="text" name="comment" form="mes" placeholder="Digite sua mensagem"></textarea><br/><br/>
+							<div id="rightpush">
+								<input type="submit" value="Enviar">
+								<input type="reset" value="Limpar">
+							<div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="css/code.js">	</script>
+	</body>
+</html>
