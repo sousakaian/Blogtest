@@ -208,11 +208,13 @@
 				</table>
 				<div>
 
-					<form id="mes" action="mailto:sousa.kaian@hotmail.com" method="POST" enctype="text/plain">
+					<form id="mes" action="mailto:sousa.kaian@hotmail.com" method="GET" enctype="text/plain">
 						<b class="th">Name:</b><br/>
-							<input type="text" name="name" placeholder="Digite seu Nome"><br/>
+							<input type="text" name="Name" value="Digite seu Nome"><br/>
+						<b class="th">E-mail:</b><br/>
+							<input type="text" name="E-Mail Address" value="example@yourmail.com"><br/>
 						<b class="th">Comment:</b><br/>
-							<textarea type="text" name="comment" form="mes" placeholder="Digite sua mensagem"></textarea><br/><br/>
+							<textarea type="text" name="body" form="mes" placeholder="Digite sua mensagem"></textarea><br/><br/>
 							<div id="rightpush">
 								<input type="submit" value="Enviar">
 								<input type="reset" value="Limpar">
