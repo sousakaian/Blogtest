@@ -1,3 +1,4 @@
+$(document).ready(function () { alert('on jQuery ready'); });
 
 function inptrue1(but) {
     let Smim = $("#Smim");
